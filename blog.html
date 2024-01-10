@@ -1,126 +1,235 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="css/styles.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    </head>
-   <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#"><img alt="Логотип">Boldo</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><button type="submit">Log In</button></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <article>
-                <p>Blog</p>
-                <h1>Thoughts and words</h1>                
-                    <a href="#">
-                        <img src="img/Big_preview.png" width="550px" height="386px" alt="Картинка превью">
-                        <p>Category</p><time datetime="2021-11-22">November 22, 2021</time>
-                        <h2>Pitch termsheet backing validation focus release.</h2>
-                        <p><img src="img/avatar_1.jpg" width="32px" height="32px" alt="">Chandler Bing</p>
-                    </a>                
-                </article>
-            </section>
-            <section>
-                <h2>Latest news</h2>
-                <article>                    
-                    <a href="#">
-                        <img src="img/Small_preview_1.png" width="300px" height="209px" alt="Картинка превью">
-                        <!-- Здесь не понятно нужно ли alt заполнять, а также прописывать все размеры явно, думается, что нужно, т.к. это стартовое состояние страницы, а то что подгрузится, то уже в css прочитаются размеры -->
-                        <p>Category</p><time datetime="2021-11-22">November 22, 2021</time>
-                        <h3>Pitch termsheet backing validation focus release.</h3>
-                        <p><img src="img/avatar_1.jpg" width="32px" height="32px" alt="">Chandler Bing</p>
-                    </a>                    
-                </article>
-                <article>                    
-                    <a href="#">
-                        <img src="img/Small_preview_2.jpg" width="300px" height="209px" alt="Картинка превью">
-                        <p>Category</p><time datetime="2021-11-22">November 22, 2021</time>
-                        <h3>Seed round direct mailing non-disclosure agreement graphical user interface rockstar.</h3>
-                        <p><img src="img/avatar_2.jpg" width="32px" height="32px" alt="">Rachel Green</p>
-                    </a>                    
-                </article>
-                <article>                    
-                    <a href="#">
-                        <img src="img/Small_preview_3.png" width="300px" height="209px" alt="Картинка превью">
-                        <p>Category</p><time datetime="2021-11-22">November 22, 2021</time>
-                        <h3>Beta prototype sales iPad gen-z marketing network effects value proposition</h3>
-                        <p><img src="img/avatar_3.jpg" width="32px" height="32px" alt="">Monica Geller</p>
-                    </a>                    
-                </article>
-                <article>                    
-                    <a href="#">
-                        <img src="img/Small_preview_4.jpg" width="300px" height="209px" alt="Картинка превью">
-                        <p>Category</p><time datetime="2021-11-22">November 22, 2021</time>
-                        <h3>Pitch termsheet backing validation focus release.</h3>
-                        <p><img src="img/avatar_1.jpg" width="32px" height="32px" alt="">Chandler Bing</p>
-                    </a>                    
-                </article>
-                <article>                    
-                    <a href="#">
-                        <img src="img/Small_preview_5.jpg" width="300px" height="209px" alt="Картинка превью">
-                        <p>Category</p><time datetime="2021-11-22">November 22, 2021</time>
-                        <h3>Seed round direct mailing non-disclosure agreement graphical user interface rockstar.</h3>
-                        <p><img src="img/avatar_2.jpg" width="32px" height="32px" alt="">Rachel Green</p>
-                    </a>                    
-                </article>
-                <article>                    
-                    <a href="#">
-                        <img src="img/Small_preview_6.png" width="300px" height="209px" alt="Картинка превью">
-                        <p>Category</p><time datetime="2021-11-22">November 22, 2021</time>
-                        <h3>Beta prototype sales iPad gen-z marketing network effects value proposition</h3>
-                        <p><img src="img/avatar_3.jpg" width="32px" height="32px" alt="">Monica Geller</p>
-                    </a>                    
-                </article>
-                <button type="button">Load more</button>
-            </section>
-        </main>
-        <footer>
-            <section>
-                <h2>An enterprise template to ramp up your company website</h2>
-                <form action="" method="post">
-                    <input type="email" id="email" name="email">
-                    <button type="submit">Start now</button>
-                </form>
-            </section>
-            <section>
-                <article>
-                    <a href="#"><img alt="Логотип">Boldo</a>
-                    <p>Social media validation business model canvas graphical user interface launch party creative facebook iPad twitter.</p>
-                </article>
-            </section>
-            <section>
-                <ul>
-                    <h3>Landings</h3>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Services</a></li>
-                </ul>
-                <ul>
-                    <h3>Company</h3>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Careers</a></li><!-- Здесь применю псеводоэлемент ::after-->
-                    <li><a href="#">Services</a></li>
-                </ul>
-                <ul>
-                    <h3>Resources</h3>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Services</a></li>
-                </ul>
-            </section>
-            <p>All rights reserved.</p>
-        </footer>
-   </body>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><img alt="Логотип" />Boldo</a>
+          </li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><button type="submit">Log In</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article>
+          <p>Blog</p>
+          <h1>Thoughts and words</h1>
+          <a href="#">
+            <img
+              src="img/Big_preview.png"
+              width="550px"
+              height="386px"
+              alt="Картинка превью"
+            />
+            <p>Category</p>
+            <time datetime="2021-11-22">November 22, 2021</time>
+            <h2>Pitch termsheet backing validation focus release.</h2>
+            <p>
+              <img
+                src="img/avatar_1.jpg"
+                width="32px"
+                height="32px"
+                alt=""
+              />Chandler Bing
+            </p>
+          </a>
+        </article>
+      </section>
+      <section>
+        <h2>Latest news</h2>
+        <article>
+          <a href="#">
+            <img
+              src="img/Small_preview_1.png"
+              width="300px"
+              height="209px"
+              alt="Картинка превью"
+            />
+            <!-- Здесь не понятно нужно ли alt заполнять, а также прописывать все размеры явно, думается, что нужно, т.к. это стартовое состояние страницы, а то что подгрузится, то уже в css прочитаются размеры -->
+            <p>Category</p>
+            <time datetime="2021-11-22">November 22, 2021</time>
+            <h3>Pitch termsheet backing validation focus release.</h3>
+            <p>
+              <img
+                src="img/avatar_1.jpg"
+                width="32px"
+                height="32px"
+                alt=""
+              />Chandler Bing
+            </p>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img
+              src="img/Small_preview_2.jpg"
+              width="300px"
+              height="209px"
+              alt="Картинка превью"
+            />
+            <p>Category</p>
+            <time datetime="2021-11-22">November 22, 2021</time>
+            <h3>
+              Seed round direct mailing non-disclosure agreement graphical user
+              interface rockstar.
+            </h3>
+            <p>
+              <img
+                src="img/avatar_2.jpg"
+                width="32px"
+                height="32px"
+                alt=""
+              />Rachel Green
+            </p>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img
+              src="img/Small_preview_3.png"
+              width="300px"
+              height="209px"
+              alt="Картинка превью"
+            />
+            <p>Category</p>
+            <time datetime="2021-11-22">November 22, 2021</time>
+            <h3>
+              Beta prototype sales iPad gen-z marketing network effects value
+              proposition
+            </h3>
+            <p>
+              <img
+                src="img/avatar_3.jpg"
+                width="32px"
+                height="32px"
+                alt=""
+              />Monica Geller
+            </p>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img
+              src="img/Small_preview_4.jpg"
+              width="300px"
+              height="209px"
+              alt="Картинка превью"
+            />
+            <p>Category</p>
+            <time datetime="2021-11-22">November 22, 2021</time>
+            <h3>Pitch termsheet backing validation focus release.</h3>
+            <p>
+              <img
+                src="img/avatar_1.jpg"
+                width="32px"
+                height="32px"
+                alt=""
+              />Chandler Bing
+            </p>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img
+              src="img/Small_preview_5.jpg"
+              width="300px"
+              height="209px"
+              alt="Картинка превью"
+            />
+            <p>Category</p>
+            <time datetime="2021-11-22">November 22, 2021</time>
+            <h3>
+              Seed round direct mailing non-disclosure agreement graphical user
+              interface rockstar.
+            </h3>
+            <p>
+              <img
+                src="img/avatar_2.jpg"
+                width="32px"
+                height="32px"
+                alt=""
+              />Rachel Green
+            </p>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img
+              src="img/Small_preview_6.png"
+              width="300px"
+              height="209px"
+              alt="Картинка превью"
+            />
+            <p>Category</p>
+            <time datetime="2021-11-22">November 22, 2021</time>
+            <h3>
+              Beta prototype sales iPad gen-z marketing network effects value
+              proposition
+            </h3>
+            <p>
+              <img
+                src="img/avatar_3.jpg"
+                width="32px"
+                height="32px"
+                alt=""
+              />Monica Geller
+            </p>
+          </a>
+        </article>
+        <button type="button">Load more</button>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <h2>An enterprise template to ramp up your company website</h2>
+        <form action="" method="post">
+          <input type="email" id="email" name="email" />
+          <button type="submit">Start now</button>
+        </form>
+      </section>
+      <section>
+        <article>
+          <a href="#"><img alt="Логотип" />Boldo</a>
+          <p>
+            Social media validation business model canvas graphical user
+            interface launch party creative facebook iPad twitter.
+          </p>
+        </article>
+      </section>
+      <section>
+        <ul>
+          <h3>Landings</h3>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+        <ul>
+          <h3>Company</h3>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Careers</a></li>
+          <!-- Здесь применю псеводоэлемент ::after-->
+          <li><a href="#">Services</a></li>
+        </ul>
+        <ul>
+          <h3>Resources</h3>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </section>
+      <p>All rights reserved.</p>
+    </footer>
+  </body>
 </html>
