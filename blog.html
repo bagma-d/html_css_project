@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,61 +9,79 @@
     <title>Blog</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="header-nav">
         <ul>
-          <li>
-            <a href="#"><img alt="Логотип" />Boldo</a>
+          <li class="logo">
+            <a href="#">
+              <div class="logo-pic">
+                <p class="logo-pic-first"></p>
+                <p class="logo-pic-last"></p>
+              </div>
+              <p class="logo-title">Boldo</p>
+            </a>
           </li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About</a></li>
-          <li><button type="submit">Log In</button></li>
+          <li class="header-nav-item"><a href="#">Product</a></li>
+          <li class="header-nav-item"><a href="#">Services</a></li>
+          <li class="header-nav-item"><a href="#">About</a></li>
+          <li>
+            <button class="header-login-button" type="submit">Log In</button>
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
-        <article>
-          <p>Blog</p>
-          <h1>Thoughts and words</h1>
-          <a href="#">
+    <main class="main-content">
+      <section class="last-article">
+        <p class="main-title-blog">Blog</p>
+        <h1 class="main-title">Thoughts and words</h1>
+        <a href="#">
+          <img
+            class="last-article-picture"
+            src="img/Big_preview.png"
+            width="550px"
+            height="386px"
+            alt="Картинка превью"
+          />
+          <p class="article-category">Category</p>
+          <time class="article-date" datetime="2021-11-22"
+            >November 22, 2021</time
+          >
+          <h2 class="article-title">
+            Pitch termsheet backing validation focus release.
+          </h2>
+          <p class="article-author">
             <img
-              src="img/Big_preview.png"
-              width="550px"
-              height="386px"
-              alt="Картинка превью"
-            />
-            <p>Category</p>
-            <time datetime="2021-11-22">November 22, 2021</time>
-            <h2>Pitch termsheet backing validation focus release.</h2>
-            <p>
-              <img
-                src="img/avatar_1.jpg"
-                width="32px"
-                height="32px"
-                alt=""
-              />Chandler Bing
-            </p>
-          </a>
-        </article>
+              class="author-avatar"
+              src="img/avatar_1.jpg"
+              width="32px"
+              height="32px"
+              alt=""
+            />Chandler Bing
+          </p>
+        </a>
       </section>
-      <section>
-        <h2>Latest news</h2>
-        <article>
+      <section class="latest-news">
+        <h2 class="latest-news-title">Latest news</h2>
+        <article class="article">
           <a href="#">
             <img
+              class="article-picture"
               src="img/Small_preview_1.png"
               width="300px"
               height="209px"
               alt="Картинка превью"
             />
             <!-- Здесь не понятно нужно ли alt заполнять, а также прописывать все размеры явно, думается, что нужно, т.к. это стартовое состояние страницы, а то что подгрузится, то уже в css прочитаются размеры -->
-            <p>Category</p>
-            <time datetime="2021-11-22">November 22, 2021</time>
-            <h3>Pitch termsheet backing validation focus release.</h3>
-            <p>
+            <p class="article-category">Category</p>
+            <time class="article-date" datetime="2021-11-22"
+              >November 22, 2021</time
+            >
+            <h3 class="article-title">
+              Pitch termsheet backing validation focus release.
+            </h3>
+            <p class="article-author">
               <img
+                class="author-avatar"
                 src="img/avatar_1.jpg"
                 width="32px"
                 height="32px"
@@ -71,22 +90,26 @@
             </p>
           </a>
         </article>
-        <article>
+        <article class="article">
           <a href="#">
             <img
+              class="article-picture"
               src="img/Small_preview_2.jpg"
               width="300px"
               height="209px"
               alt="Картинка превью"
             />
-            <p>Category</p>
-            <time datetime="2021-11-22">November 22, 2021</time>
-            <h3>
+            <p class="article-category">Category</p>
+            <time class="article-date" datetime="2021-11-22"
+              >November 22, 2021</time
+            >
+            <h3 class="article-title">
               Seed round direct mailing non-disclosure agreement graphical user
               interface rockstar.
             </h3>
-            <p>
+            <p class="article-author">
               <img
+                class="author-avatar"
                 src="img/avatar_2.jpg"
                 width="32px"
                 height="32px"
@@ -95,22 +118,26 @@
             </p>
           </a>
         </article>
-        <article>
+        <article class="article">
           <a href="#">
             <img
+              class="article-picture"
               src="img/Small_preview_3.png"
               width="300px"
               height="209px"
               alt="Картинка превью"
             />
-            <p>Category</p>
-            <time datetime="2021-11-22">November 22, 2021</time>
-            <h3>
+            <p class="article-category">Category</p>
+            <time class="article-date" datetime="2021-11-22"
+              >November 22, 2021</time
+            >
+            <h3 class="article-title">
               Beta prototype sales iPad gen-z marketing network effects value
               proposition
             </h3>
-            <p>
+            <p class="article-author">
               <img
+                class="author-avatar"
                 src="img/avatar_3.jpg"
                 width="32px"
                 height="32px"
@@ -119,19 +146,25 @@
             </p>
           </a>
         </article>
-        <article>
+        <article class="article">
           <a href="#">
             <img
+              class="article-picture"
               src="img/Small_preview_4.jpg"
               width="300px"
               height="209px"
               alt="Картинка превью"
             />
-            <p>Category</p>
-            <time datetime="2021-11-22">November 22, 2021</time>
-            <h3>Pitch termsheet backing validation focus release.</h3>
-            <p>
+            <p class="article-category">Category</p>
+            <time class="article-date" datetime="2021-11-22"
+              >November 22, 2021</time
+            >
+            <h3 class="article-title">
+              Pitch termsheet backing validation focus release.
+            </h3>
+            <p class="article-author">
               <img
+                class="author-avatar"
                 src="img/avatar_1.jpg"
                 width="32px"
                 height="32px"
@@ -140,22 +173,26 @@
             </p>
           </a>
         </article>
-        <article>
+        <article class="article">
           <a href="#">
             <img
+              class="article-picture"
               src="img/Small_preview_5.jpg"
               width="300px"
               height="209px"
               alt="Картинка превью"
             />
-            <p>Category</p>
-            <time datetime="2021-11-22">November 22, 2021</time>
-            <h3>
+            <p class="article-category">Category</p>
+            <time class="article-date" datetime="2021-11-22"
+              >November 22, 2021</time
+            >
+            <h3 class="article-title">
               Seed round direct mailing non-disclosure agreement graphical user
               interface rockstar.
             </h3>
-            <p>
+            <p class="article-author">
               <img
+                class="author-avatar"
                 src="img/avatar_2.jpg"
                 width="32px"
                 height="32px"
@@ -164,22 +201,26 @@
             </p>
           </a>
         </article>
-        <article>
+        <article class="article">
           <a href="#">
             <img
+              class="article-picture"
               src="img/Small_preview_6.png"
               width="300px"
               height="209px"
               alt="Картинка превью"
             />
-            <p>Category</p>
-            <time datetime="2021-11-22">November 22, 2021</time>
-            <h3>
+            <p class="article-category">Category</p>
+            <time class="article-date" datetime="2021-11-22"
+              >November 22, 2021</time
+            >
+            <h3 class="article-title">
               Beta prototype sales iPad gen-z marketing network effects value
               proposition
             </h3>
-            <p>
+            <p class="article-author">
               <img
+                class="author-avatar"
                 src="img/avatar_3.jpg"
                 width="32px"
                 height="32px"
@@ -188,48 +229,48 @@
             </p>
           </a>
         </article>
-        <button type="button">Load more</button>
+        <button class="news-button-more" type="button">Load more</button>
       </section>
     </main>
-    <footer>
-      <section>
-        <h2>An enterprise template to ramp up your company website</h2>
-        <form action="" method="post">
-          <input type="email" id="email" name="email" />
-          <button type="submit">Start now</button>
+    <footer class="footer">
+      <section class="subscribe">
+        <h2 class="subscribe-title">
+          An enterprise template to ramp up your company website
+        </h2>
+        <form class="subscribe-form" action="" method="post">
+          <input class="subscribe-email" type="email" id="email" name="email" />
+          <button class="subscribe-button" type="submit">Start now</button>
         </form>
       </section>
-      <section>
-        <article>
-          <a href="#"><img alt="Логотип" />Boldo</a>
-          <p>
-            Social media validation business model canvas graphical user
-            interface launch party creative facebook iPad twitter.
-          </p>
-        </article>
+      <section class="company-description">
+        <a class="logo" href="#"><img alt="Логотип" />Boldo</a>
+        <p class="company-description-text">
+          Social media validation business model canvas graphical user interface
+          launch party creative facebook iPad twitter.
+        </p>
       </section>
-      <section>
+      <section class="footer-nav">
         <ul>
-          <h3>Landings</h3>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Services</a></li>
+          <h3 class="footer-nav-title">Landings</h3>
+          <li class="footer-nav-item"><a href="#">Home</a></li>
+          <li class="footer-nav-item"><a href="#">Products</a></li>
+          <li class="footer-nav-item"><a href="#">Services</a></li>
         </ul>
         <ul>
-          <h3>Company</h3>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Careers</a></li>
+          <h3 class="footer-nav-title">Company</h3>
+          <li class="footer-nav-item"><a href="#">Home</a></li>
+          <li class="footer-nav-item hiring"><a href="#">Careers</a></li>
           <!-- Здесь применю псеводоэлемент ::after-->
-          <li><a href="#">Services</a></li>
+          <li class="footer-nav-item"><a href="#">Services</a></li>
         </ul>
         <ul>
-          <h3>Resources</h3>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Services</a></li>
+          <h3 class="footer-nav-title">Resources</h3>
+          <li class="footer-nav-item"><a href="#">Blog</a></li>
+          <li class="footer-nav-item"><a href="#">Products</a></li>
+          <li class="footer-nav-item"><a href="#">Services</a></li>
         </ul>
       </section>
-      <p>All rights reserved.</p>
+      <p class="copyright">All rights reserved.</p>
     </footer>
   </body>
 </html>
