@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
@@ -21,9 +27,15 @@
               <p class="logo-title">Boldo</p>
             </a>
           </li>
-          <li class="header-nav-item"><a href="#">Product</a></li>
-          <li class="header-nav-item"><a href="#">Services</a></li>
-          <li class="header-nav-item"><a href="#">About</a></li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#">Product</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#">Services</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#">About</a>
+          </li>
           <li>
             <button class="header-login-button" type="submit">Log In</button>
           </li>
@@ -46,7 +58,7 @@
           <time class="article-date" datetime="2021-11-22"
             >November 22, 2021</time
           >
-          <h2 class="article-title">
+          <h2 class="article-title-big">
             Pitch termsheet backing validation focus release.
           </h2>
           <p class="article-author">
@@ -238,12 +250,24 @@
           An enterprise template to ramp up your company website
         </h2>
         <form class="subscribe-form" action="" method="post">
-          <input class="subscribe-email" type="email" id="email" name="email" />
+          <input
+            class="subscribe-email"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email address"
+          />
           <button class="subscribe-button" type="submit">Start now</button>
         </form>
       </section>
       <section class="company-description">
-        <a class="logo" href="#"><img alt="Логотип" />Boldo</a>
+        <a href="#">
+          <div class="logo-pic">
+            <p class="logo-pic-first"></p>
+            <p class="logo-pic-last"></p>
+          </div>
+          <p class="logo-title">Boldo</p>
+        </a>
         <p class="company-description-text">
           Social media validation business model canvas graphical user interface
           launch party creative facebook iPad twitter.
@@ -252,22 +276,40 @@
       <section class="footer-nav">
         <ul>
           <h3 class="footer-nav-title">Landings</h3>
-          <li class="footer-nav-item"><a href="#">Home</a></li>
-          <li class="footer-nav-item"><a href="#">Products</a></li>
-          <li class="footer-nav-item"><a href="#">Services</a></li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Home</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Products</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Services</a>
+          </li>
         </ul>
         <ul>
           <h3 class="footer-nav-title">Company</h3>
-          <li class="footer-nav-item"><a href="#">Home</a></li>
-          <li class="footer-nav-item hiring"><a href="#">Careers</a></li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Home</a>
+          </li>
+          <li class="footer-nav-item hiring">
+            <a class="footer-nav-link" href="#">Careers</a>
+          </li>
           <!-- Здесь применю псеводоэлемент ::after-->
-          <li class="footer-nav-item"><a href="#">Services</a></li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Services</a>
+          </li>
         </ul>
         <ul>
           <h3 class="footer-nav-title">Resources</h3>
-          <li class="footer-nav-item"><a href="#">Blog</a></li>
-          <li class="footer-nav-item"><a href="#">Products</a></li>
-          <li class="footer-nav-item"><a href="#">Services</a></li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Blog</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Products</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Services</a>
+          </li>
         </ul>
       </section>
       <p class="copyright">All rights reserved.</p>
