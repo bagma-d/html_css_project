@@ -85,12 +85,31 @@ li {
 }
 
 /* main */
+.border {
+  width: 1200px;
+  text-align: center;
+  margin-left: 100px;
+  border-bottom: 1px solid #0a2640;
+}
 .main-content {
   display: grid;
 }
 .last-article {
   text-align: center;
 }
+.last-article-link {
+  margin: 40px 100px 72px 100px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 28px 145px 32px auto;
+  grid-template-areas:
+    "picture ."
+    "picture category"
+    "picture title"
+    "picture author"
+    "picture .";
+}
+
 .main-title-blog {
   color: #0a2640;
   /* Paragraphs/Text S */
@@ -120,8 +139,13 @@ li {
 
 .last-article-picture {
   border-radius: 24px;
+  grid-area: picture;
+  margin-right: 100px;
 }
-
+.article-category-date {
+  grid-area: category;
+  text-align: left;
+}
 .article-category {
   color: #0a2640;
   font-family: Open Sans;
@@ -129,6 +153,8 @@ li {
   font-style: normal;
   font-weight: 700;
   line-height: 28px; /* 175% */
+  margin: 0;
+  padding-right: 12px;
 }
 
 .article-date {
@@ -144,31 +170,43 @@ li {
 
 .article-title-big {
   color: #000;
-
+  grid-area: title;
   /* Headings/Text XXL */
   font-family: Manrope;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: 72px; /* 150% */
+  margin: 0;
+  margin-top: 12px;
+  text-align: left;
 }
 
 .article-author {
+  grid-area: author;
   color: #000;
-
+  margin-top: 20px;
   /* Paragraphs/Text XS */
   font-family: Open Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 175% */
+  text-align: left;
 }
 
 .author-avatar {
   border-radius: 32px;
+  vertical-align: middle;
+  padding-right: 12px;
 }
 
+.latest-news {
+  margin: 96px 202px 0 202px;
+}
 .latest-news-title {
+  margin: 0;
+  margin-bottom: 40px;
   color: #000;
   font-family: Manrope;
   font-size: 48px;
@@ -176,7 +214,11 @@ li {
   font-weight: 400;
   line-height: 72px; /* 150% */
 }
-
+.articles-row {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .article-picture {
   height: 209px;
   align-self: stretch;
