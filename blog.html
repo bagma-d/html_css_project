@@ -35,16 +35,17 @@
             <a class="header-nav-link" href="#">About</a>
           </li>
           <li>
-            <button class="header-login-button" type="submit">Log In</button>
+            <button class="header-login-button" type="button">Log In</button>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-content">
+      <h1 class="visually-hidden">Blog</h1>
       <section class="last-article">
         <p class="main-title-blog">Blog</p>
-        <h1 class="main-title">Thoughts and words</h1>
-        <a class="last-article-link" href="#">
+        <p class="main-title">Thoughts and words</p>
+        <a class="last-article-link" href="#" target="_blank">
           <img
             class="last-article-picture"
             src="img/Big_preview.png"
@@ -54,9 +55,7 @@
           />
           <div class="article-category-date">
             <span class="article-category">Category</span>
-            <time class="article-date" datetime="2021-11-22"
-              >November 22, 2021</time
-            >
+            <span class="article-date">November 22, 2021</span>
           </div>
           <h2 class="article-title-big">
             Pitch termsheet backing validation focus release.
@@ -74,25 +73,29 @@
       </section>
       <div class="border"></div>
       <section class="latest-news">
-        <h2 class="latest-news-title">Latest news</h2>
-        <section class="articles-row">
+        <h2 class="visually-hidden">Articles</h2>
+        <p class="latest-news-title">Latest news</p>
+        <section class="articles-grid">
           <article class="article">
-            <img
+            <a class="articles-link" href="#" target="_blank">
+              <img
               class="article-picture"
               src="img/Small_preview_1.png"
               width="300px"
               height="209px"
               alt="Картинка превью"
-            />
-            <!-- Здесь не понятно нужно ли alt заполнять, а также прописывать все размеры явно, думается, что нужно, т.к. это стартовое состояние страницы, а то что подгрузится, то уже в css прочитаются размеры -->
+            />  
+            </a>          
             <div class="article-category-date">
-              <span class="article-category">Category</span>
-              <time class="article-date" datetime="2021-11-22"
-                >November 22, 2021</time
-              >
+              <span class="article-category">
+                <a class="category-link" href="#" target="_blank">Category</a>
+              </span>
+              <span class="article-date">
+                <a class="date-link" href="#" target="_blank">November 22, 2021</a>
+              </span>
             </div>
             <h3 class="article-title">
-              Pitch termsheet backing validation focus release.
+              <a class="articles-link" href="#" target="_blank">Pitch termsheet backing validation focus release.</a>
             </h3>
             <p class="article-author">
               <img
@@ -101,10 +104,103 @@
                 width="32px"
                 height="32px"
                 alt=""
-              />Chandler Bing
+              /><a class="author-link" href="#" target="_blank">Chandler Bing</a>
             </p>
           </article>
           <article class="article">
+            <a class="articles-link" href="#" target="_blank">
+              <img
+              class="article-picture"
+              src="img/Small_preview_1.png"
+              width="300px"
+              height="209px"
+              alt="Картинка превью"
+            />  
+            </a>          
+            <div class="article-category-date">
+              <span class="article-category">
+                <a class="category-link" href="#" target="_blank">Category</a>
+              </span>
+              <span class="article-date">
+                <a class="date-link" href="#" target="_blank">November 22, 2021</a>
+              </span>
+            </div>
+            <h3 class="article-title">
+              <a class="articles-link" href="#" target="_blank">Pitch termsheet backing validation focus release.</a>
+            </h3>
+            <p class="article-author">
+              <img
+                class="author-avatar"
+                src="img/avatar_1.jpg"
+                width="32px"
+                height="32px"
+                alt=""
+              /><a class="author-link" href="#" target="_blank">Chandler Bing</a>
+            </p>
+          </article>
+          <article class="article">
+            <a class="articles-link" href="#" target="_blank">
+              <img
+              class="article-picture"
+              src="img/Small_preview_1.png"
+              width="300px"
+              height="209px"
+              alt="Картинка превью"
+            />  
+            </a>          
+            <div class="article-category-date">
+              <span class="article-category">
+                <a class="category-link" href="#" target="_blank">Category</a>
+              </span>
+              <span class="article-date">
+                <a class="date-link" href="#" target="_blank">November 22, 2021</a>
+              </span>
+            </div>
+            <h3 class="article-title">
+              <a class="articles-link" href="#" target="_blank">Pitch termsheet backing validation focus release.</a>
+            </h3>
+            <p class="article-author">
+              <img
+                class="author-avatar"
+                src="img/avatar_1.jpg"
+                width="32px"
+                height="32px"
+                alt=""
+              /><a class="author-link" href="#" target="_blank">Chandler Bing</a>
+            </p>
+          </article>
+          <article class="article">
+            <a class="articles-link" href="#" target="_blank">
+              <img
+              class="article-picture"
+              src="img/Small_preview_1.png"
+              width="300px"
+              height="209px"
+              alt="Картинка превью"
+            />  
+            </a>          
+            <div class="article-category-date">
+              <span class="article-category">
+                <a class="category-link" href="#" target="_blank">Category</a>
+              </span>
+              <span class="article-date">
+                <a class="date-link" href="#" target="_blank">November 22, 2021</a>
+              </span>
+            </div>
+            <h3 class="article-title">
+              <a class="articles-link" href="#" target="_blank">Pitch termsheet backing validation focus release.</a>
+            </h3>
+            <p class="article-author">
+              <img
+                class="author-avatar"
+                src="img/avatar_1.jpg"
+                width="32px"
+                height="32px"
+                alt=""
+              /><a class="author-link" href="#" target="_blank">Chandler Bing</a>
+            </p>
+          </article>
+   <!--   <article class="article">
             <img
               class="article-picture"
               src="img/Small_preview_2.jpg"
@@ -114,9 +210,7 @@
             />
             <div class="article-category-date">
               <span class="article-category">Category</span>
-              <time class="article-date" datetime="2021-11-22"
-                >November 22, 2021</time
-              >
+              <span class="article-date">November 22, 2021</span>
             </div>
             <h3 class="article-title">
               Seed round direct mailing non-disclosure agreement graphical user
@@ -244,7 +338,7 @@
                 alt=""
               />Monica Geller
             </p>
-          </article>
+          </article> -->
         </section>
         <button class="news-button-more" type="button">Load more</button>
       </section>
