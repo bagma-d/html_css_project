@@ -1,12 +1,13 @@
 # Ignore everything
-*
+#*
 # But not these files...
-!.gitignore
-!*.html
-!*.css
-!*.js
-!*.jpg
-!*.png
+#!.gitignore
+#!*.html
+#!*.css
+#!*.js
+#!*.jpg
+#!*.png
 # etc...
 # ...even if they are in subdirectories
-!*/
+#!*/
+node_modules/
