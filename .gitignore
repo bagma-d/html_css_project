@@ -5,6 +5,8 @@
 !*.html
 !*.css
 !*.js
+!*.jpg
+!*.png
 # etc...
 # ...even if they are in subdirectories
 !*/
