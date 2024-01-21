@@ -227,22 +227,27 @@ li {
 }
 .articles-grid {
   display: grid;
-  column-gap: 50px;
+  column-gap: 44px;
+  row-gap: 80px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .article {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 424px;
 }
 .article-picture {
   height: 209px;
-  align-self: stretch;
   border-radius: 12px;
+}
+.article .article-category-date {
+  padding: 24px 0 12px 0;
 }
 
 .article-title {
   color: #000;
-
+  margin: 0;
   /* Paragraphs/Text S */
   font-family: Open Sans;
   font-size: 20px;
@@ -250,8 +255,14 @@ li {
   font-weight: 400;
   line-height: 32px; /* 160% */
 }
-
+.article .article-author {
+  margin: 0;
+}
+.button-more-wrapper {
+  text-align: center;
+}
 .news-button-more {
+  margin-top: 96px;
   padding: 16px 56px;
   border-radius: 56px;
   background: none;
