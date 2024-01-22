@@ -1,3 +1,7 @@
+html {
+  width: 1400px;
+}
+
 a {
   text-decoration: none;
   color: #0a2640;
@@ -91,6 +95,18 @@ li {
   margin-left: 100px;
   border-bottom: 1px solid #0a2640;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .main-content {
   display: grid;
 }
@@ -156,8 +172,7 @@ li {
   margin: 0;
   padding-right: 12px;
 }
-
-.article-date {
+.article-date, .date-link {
   color: #777;
 
   /* Paragraphs/Text XS */
@@ -214,20 +229,29 @@ li {
   font-weight: 400;
   line-height: 72px; /* 150% */
 }
-.articles-row {
+.articles-grid {
   display: grid;
-  column-gap: 50px;
+  column-gap: 44px;
+  row-gap: 80px;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 424px;
 }
 .article-picture {
   height: 209px;
-  align-self: stretch;
   border-radius: 12px;
+}
+.article .article-category-date {
+  padding: 24px 0 12px 0;
 }
 
 .article-title {
   color: #000;
-
+  margin: 0;
   /* Paragraphs/Text S */
   font-family: Open Sans;
   font-size: 20px;
@@ -235,8 +259,14 @@ li {
   font-weight: 400;
   line-height: 32px; /* 160% */
 }
-
+.article .article-author {
+  margin: 0;
+}
+.button-more-wrapper {
+  text-align: center;
+}
 .news-button-more {
+  margin-top: 96px;
   padding: 16px 56px;
   border-radius: 56px;
   background: none;
@@ -247,18 +277,25 @@ li {
   font-weight: 700;
   line-height: 28px; /* 140% */
 }
-
+.footer {
+  margin: 124px 100px 0 100px;
+}
 .subscribe {
   width: 1200px;
   height: 391px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 12px;
   background: #0a2640;
 }
 
 .subscribe-title {
+  padding-top: 72px ;
+  width: 716px;
   color: #fff;
   text-align: center;
-
+  margin: 0;
   /* Headings/Text XXL */
   font-family: Manrope;
   font-size: 48px;
@@ -270,6 +307,7 @@ li {
 .subscribe-email {
   width: 370px;
   height: 56px;
+  margin-top: 48px;
   flex-shrink: 0;
   border-radius: 240px;
   border: 2px solid #fff;
@@ -295,6 +333,7 @@ li {
 }
 
 .subscribe-button {
+  margin-left: 24px;
   padding: 16px 56px;
   border-radius: 56px;
   border: 2px solid #65e4a3;
@@ -306,10 +345,24 @@ li {
   font-weight: 700;
   line-height: 28px; /* 140% */
 }
-
+.after-subscribe {
+  margin-top: 84px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 179px;
+  height: 374px;
+}
+.company-description {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .company-description-text {
+  
   color: #777;
-
+  margin: 0;
   /* Paragraphs/Text XS */
   font-family: Open Sans;
   font-size: 16px;
@@ -317,8 +370,19 @@ li {
   font-weight: 400;
   line-height: 28px; /* 175% */
 }
-
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 96px;
+}
+.footer-nav ul {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}
 .footer-nav-title {
+  margin: 0;
+  padding-bottom: 32px;
   color: #000;
   font-family: Open Sans;
   font-size: 20px;
@@ -326,7 +390,9 @@ li {
   font-weight: 700;
   line-height: 32px; /* 160% */
 }
-
+.footer-nav-item {
+  padding-bottom: 32px;
+}
 .footer-nav-link {
   color: #777;
 
@@ -339,6 +405,12 @@ li {
 }
 
 .hiring::after {
+  display: inline-block;
+  position: relative;
+  right: -10px;
+  width: 72px;
+  height: 30px;
+  text-align: center;
   content: "Hiring";
   color: #0a2640;
   font-family: Open Sans;
@@ -346,14 +418,16 @@ li {
   font-style: normal;
   font-weight: 700;
   line-height: 28px; /* 215.385% */
-  padding: 1px 14px;
+  padding: 1px 0;
   border-radius: 120px;
   background: #65e4a3;
 }
 
 .copyright {
+  
   color: #777;
-
+  margin: 0;
+  margin-top: 24px;
   /* Paragraphs/Text XS */
   font-family: Open Sans;
   font-size: 16px;
