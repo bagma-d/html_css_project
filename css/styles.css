@@ -1,7 +1,3 @@
-html {
-  width: 1400px;
-}
-
 a {
   text-decoration: none;
   color: #0a2640;
@@ -17,16 +13,43 @@ li {
 .body {
   margin: 0;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+}
+
+
+
 .header {
   display: grid;
   grid-template-columns: 162px 1fr;
-  margin: 56px 100px 0 100px;
+  margin-top: 56px;
 }
 
 .logo {
   display: grid;
   grid-template-columns: 25px 125px;
 }
+
 .logo-pic {
   align-self: center;
 }
@@ -53,12 +76,15 @@ li {
   font-size: 43.25px;
   font-style: normal;
   font-weight: 700;
-  line-height: 33.639px; /* 77.778% */
+  line-height: 33.639px;
+  /* 77.778% */
   margin-left: 11px;
 }
+
 .header-nav {
   justify-self: end;
 }
+
 .header-nav ul {
   width: 419px;
   display: grid;
@@ -73,14 +99,16 @@ li {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
 }
 
 .header-login-button {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
   border-radius: 24px;
   border: 2px solid #0a2640;
   background: none;
@@ -90,11 +118,11 @@ li {
 
 /* main */
 .border {
-  width: 1200px;
+  max-width: 100%;
   text-align: center;
-  margin-left: 100px;
   border-bottom: 1px solid #0a2640;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -107,14 +135,23 @@ li {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .main-content {
   display: grid;
+  max-width: 100%;
 }
+
 .last-article {
+
+  margin-top: 40px;
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  max-width: 100%;
 }
+
 .last-article-link {
-  margin: 40px 100px 72px 100px;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto 28px 145px 32px auto;
@@ -126,6 +163,8 @@ li {
     "picture .";
 }
 
+
+
 .main-title-blog {
   color: #0a2640;
   /* Paragraphs/Text S */
@@ -133,7 +172,8 @@ li {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
+  /* 160% */
   margin: 0;
   padding-top: 27px;
   padding-bottom: 12px;
@@ -142,13 +182,13 @@ li {
 .main-title {
   color: #0a2640;
   text-align: center;
-
   /* Headings/TextXXXL */
   font-family: Manrope;
   font-size: 64px;
   font-style: normal;
   font-weight: 400;
-  line-height: 84px; /* 131.25% */
+  line-height: 84px;
+  /* 131.25% */
   margin: 0;
   padding-bottom: 27px;
 }
@@ -158,21 +198,26 @@ li {
   grid-area: picture;
   margin-right: 100px;
 }
+
 .article-category-date {
   grid-area: category;
   text-align: left;
 }
+
 .article-category {
   color: #0a2640;
   font-family: Open Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
   margin: 0;
   padding-right: 12px;
 }
-.article-date, .date-link {
+
+.article-date,
+.date-link {
   color: #777;
 
   /* Paragraphs/Text XS */
@@ -180,7 +225,8 @@ li {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
 }
 
 .article-title-big {
@@ -191,11 +237,16 @@ li {
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
-  line-height: 72px; /* 150% */
+  line-height: 72px;
+  /* 150% */
   margin: 0;
   margin-top: 12px;
   text-align: left;
+
+  max-width: 100%;
 }
+
+
 
 .article-author {
   grid-area: author;
@@ -206,8 +257,34 @@ li {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
   text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .last-article-link {
+    grid-template-columns: 30% auto;
+    column-gap: 100px;
+  }
+
+  .last-article-picture {
+    width: 100%;
+    height: inherit;
+  }
+
+  .article-title-big {
+    font-size: 36px;
+    margin-top: 8px;
+  }
+
+  .article-category-date {
+    margin: 8px;
+  }
+
+  .article-author {
+    margin-top: 8px;
+  }
 }
 
 .author-avatar {
@@ -217,8 +294,15 @@ li {
 }
 
 .latest-news {
-  margin: 96px 202px 0 202px;
+  margin: 96px 102px 0 102px;
 }
+
+@media (max-width: 1200px) {
+  .latest-news {
+    margin-inline: 30px;
+  }
+}
+
 .latest-news-title {
   margin: 0;
   margin-bottom: 40px;
@@ -227,24 +311,29 @@ li {
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
-  line-height: 72px; /* 150% */
+  line-height: 72px;
+  /* 150% */
 }
+
 .articles-grid {
   display: grid;
   column-gap: 44px;
   row-gap: 80px;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 424px;
 }
+
 .article-picture {
   height: 209px;
   border-radius: 12px;
 }
+
 .article .article-category-date {
   padding: 24px 0 12px 0;
 }
@@ -257,14 +346,18 @@ li {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
+  /* 160% */
 }
+
 .article .article-author {
   margin: 0;
 }
+
 .button-more-wrapper {
   text-align: center;
 }
+
 .news-button-more {
   margin-top: 96px;
   padding: 16px 56px;
@@ -275,13 +368,15 @@ li {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 28px; /* 140% */
+  line-height: 28px;
+  /* 140% */
 }
+
 .footer {
-  margin: 124px 100px 0 100px;
+  margin-top: 124px;
 }
+
 .subscribe {
-  width: 1200px;
   height: 391px;
   display: flex;
   flex-direction: column;
@@ -291,7 +386,7 @@ li {
 }
 
 .subscribe-title {
-  padding-top: 72px ;
+  padding-top: 72px;
   width: 716px;
   color: #fff;
   text-align: center;
@@ -301,7 +396,8 @@ li {
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
-  line-height: 72px; /* 150% */
+  line-height: 72px;
+  /* 150% */
 }
 
 .subscribe-email {
@@ -320,7 +416,8 @@ li {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
+  /* 160% */
 }
 
 .subscribe-email::placeholder {
@@ -329,7 +426,8 @@ li {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
+  /* 160% */
 }
 
 .subscribe-button {
@@ -343,8 +441,10 @@ li {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 28px; /* 140% */
+  line-height: 28px;
+  /* 140% */
 }
+
 .after-subscribe {
   margin-top: 84px;
   padding-top: 100px;
@@ -353,14 +453,16 @@ li {
   gap: 179px;
   height: 374px;
 }
+
 .company-description {
   width: 300px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
+
 .company-description-text {
-  
+
   color: #777;
   margin: 0;
   /* Paragraphs/Text XS */
@@ -368,18 +470,22 @@ li {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
 }
+
 .footer-nav {
   display: flex;
   flex-direction: row;
   gap: 96px;
 }
+
 .footer-nav ul {
   margin: 0;
   padding: 0;
   width: 150px;
 }
+
 .footer-nav-title {
   margin: 0;
   padding-bottom: 32px;
@@ -388,11 +494,14 @@ li {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
+  /* 160% */
 }
+
 .footer-nav-item {
   padding-bottom: 32px;
 }
+
 .footer-nav-link {
   color: #777;
 
@@ -401,7 +510,8 @@ li {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
+  /* 160% */
 }
 
 .hiring::after {
@@ -417,14 +527,15 @@ li {
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
-  line-height: 28px; /* 215.385% */
+  line-height: 28px;
+  /* 215.385% */
   padding: 1px 0;
   border-radius: 120px;
   background: #65e4a3;
 }
 
 .copyright {
-  
+
   color: #777;
   margin: 0;
   margin-top: 24px;
@@ -433,5 +544,10 @@ li {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
+}
+
+.hide {
+  display: none;
 }
